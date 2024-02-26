@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------
+    파일정의 : 레이아웃
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+    @공통
+-------------------------------------------------------------------*/
+#skip-nav {height:0}
+#skip-nav a {display: block; position: absolute; left: 0; top: -100px; width: 100%; height: 1px; text-align: center}
+#skip-nav a:focus, #skip a:active {position: absolute; top: 0; z-index: 120; height: 25px; padding: 10px 0; font-size: 1.4em; font-weight: 700; color: #36348f; background: #fff;}
+
+/*-------------------------------------------------------------------
+    @header
+-------------------------------------------------------------------*/
+#header {background: #343A40; flex: none;}
+#header .container {padding-left: 3rem; padding-right: 3rem; display: flex; justify-content: space-between; align-items: center; height: 7.2rem;}
+
+.funeral {font-family: 'NotoSerif'; font-size: 2.4rem; color: #ffffff; font-weight: 500; text-align: center; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+
+#header .txt-admin {display: flex; align-items: center; justify-content: flex-start; gap: 0 1rem; color: #F8F9FA; font-weight: 700; font-size: 2.4rem; line-height: 1.25;}
+ 
+/*-------------------------------------------------------------------
+    @footer
+-------------------------------------------------------------------*/
+#footer{}
+
+.link{}
+
+.family{}
+
+.sns{}
+
+.address{}
+
+.logo-f{}
+
+.copyright{}
+
+.fnb {}
+ 
+/*-------------------------------------------------------------------
+    @content
+-------------------------------------------------------------------*/
+#wrapper {flex: 1 0; /*overflow: auto;*/}
+#header + #wrapper {max-height: calc(100vh - 7.2rem);}
+#header + #wrapper > .content {padding: 2rem 2rem; max-height: calc(100vh - 7.2rem);}
+
+.container { margin-left: auto; margin-right: auto; position: relative;}
+
+.has-padding{}
+
+body {display: flex; flex-direction: column; max-height: 100vh;}
+
+/*-------------------------------------------------------------------
+    @floating
+-------------------------------------------------------------------*/
+ 
+/*-------------------------------------------------------------------
+    @popup
+-------------------------------------------------------------------*/
+.dim {position: fixed; width: 100vw; height: 100vh; background-color: #000000; opacity: 0.5;}
+.popup {}
+
+.popup .pop-head{}
+
+.popup .pop-cont{}
+
+.popup .pop-footer{}

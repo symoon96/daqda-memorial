@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>다큐다 메모리얼</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="./css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <link href="./css/components.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <!-- content -->
+    <div id="wrapper">
+        <div class="nav">
+            <div class="title">
+                <h1 class="funeral">서울성모병원 장례식장</h1>
+                <p class="room"><strong>1</strong>호실</p>
+                <p class="name">故 홍길동</p>
+            </div>
+            <div class="lnb">
+                <ul class="depth01">
+                    <li>
+                        <a href="javascript:void(0);">식당</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">주문</a></li>
+                            <li><a href="javascript:void(0);">반품</a></li>
+                            <li class="on"><a href="javascript:void(0);">주문/반품 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">매점</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">주문</a></li>
+                            <li><a href="javascript:void(0);">반품</a></li>
+                            <li><a href="javascript:void(0);">주문/반품 내역</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="back">
+                <button class="btn lg fill-white">빈소선택</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="list-wrap v4">
+                <div class="list-head">
+                    <ul>
+                        <li>
+                            <p class="num">전표번호</p>
+                            <p class="divide">구분</p>
+                            <p class="category">분류</p>
+                            <p class="date">주문일시</p>
+                            <p class="price">금액</p>
+                            <p class="status">수령 여부</p>
+                            <p class="detail">상세내역</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-body">
+                    <ul>
+                        <li class="return">
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 orange">반품</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price minus"><p>- ₩ 150,000</p></div>
+                            <div class="status"><p>반품</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 blue">주문</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price plus"><p>₩ 68,000</p></div>
+                            <div class="status"><p>수령대기</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li class="complete">
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 orange">반품</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price plus"><p>₩ 68,000</p></div>
+                            <div class="status"><p>수령완료</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li class="cancle">
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 orange">반품</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price plus"><p>₩ 68,000</p></div>
+                            <div class="status"><p>주문취소</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li class="return">
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 orange">반품</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price minus"><p>- ₩ 150,000</p></div>
+                            <div class="status"><p>반품</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 blue">주문</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price plus"><p>₩ 68,000</p></div>
+                            <div class="status"><p>수령대기</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li class="complete">
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 orange">반품</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price plus"><p>₩ 68,000</p></div>
+                            <div class="status"><p>수령완료</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li class="cancle">
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 orange">반품</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price plus"><p>₩ 68,000</p></div>
+                            <div class="status"><p>주문취소</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li class="return">
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 orange">반품</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price minus"><p>- ₩ 150,000</p></div>
+                            <div class="status"><p>반품</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 blue">주문</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price plus"><p>₩ 68,000</p></div>
+                            <div class="status"><p>수령대기</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li class="complete">
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 orange">반품</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price plus"><p>₩ 68,000</p></div>
+                            <div class="status"><p>수령완료</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                        <li class="cancle">
+                            <div class="num">
+                                <p>No.1</p>
+                            </div>
+                            <div class="divide">
+                                <span class="label v1 orange">반품</span>
+                            </div>
+                            <div class="category">
+                                <p>식당</p>
+                            </div>
+                            <div class="date"><p>12.10 15:30</p></div>
+                            <div class="price plus"><p>₩ 68,000</p></div>
+                            <div class="status"><p>주문취소</p></div>
+                            <div class="detail">
+                                <button class="btn-ic btn-detail" onclick="popOpenAndDim('popOrderDetail', true)"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="total">
+                <div class="inner">
+                    <dl>
+                        <dt>합계</dt>
+                        <dd>₩ 1,512,000</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <div class="popup alert" id="popCancle">
+        <button class="btn-ic btn-pop-close" onclick="popClose('popCancle');"></button>
+        <div class="inner">
+            <i class="ic-cancle"></i>
+            <p class="txt">
+                주문을 <br>
+                취소하시겠습니까?
+            </p>
+
+            <div class="btn-wrap"><button class="btn sm fill-orange" onclick="popCloseAndDim('popCancle', true); popClose('popOrderDetail');">주문취소</button><button class="btn sm fill-black" onclick="popClose('popCancle');">닫기</button></div>
+        </div>
+    </div>
+
+    <div class="popup layer" id="popOrderDetail">
+        <div class="pop-head">
+            <p class="tit">주문내역</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('popOrderDetail', true)"></button>
+        </div>
+        <div class="pop-body">
+            <div class="list-top">
+                <dl class="chit-num">
+                    <dt><i class="ic-chit"></i>전표번호</dt>
+                    <dd>2</dd>
+                </dl>
+                <dl class="order-date">
+                    <dt><i class="ic-date"></i>주문일</dt>
+                    <dd>12월 10일 15시 20분</dd>
+                </dl>
+            </div>
+            <div class="list-wrap v5">
+                <table>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="ta-l">품목</th>
+                            <th>단위</th>
+                            <th>금액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta-l"><strong>쌀밥 (50인분)</strong></td>
+                            <td>50인분</td>
+                            <td class="ta-r"><strong>₩ 68,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="ta-l"><strong>쌀밥 (50인분)</strong></td>
+                            <td>50인분</td>
+                            <td class="ta-r"><strong>₩ 68,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="ta-l"><strong>쌀밥 (50인분)</strong></td>
+                            <td>50인분</td>
+                            <td class="ta-r"><strong>₩ 68,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="ta-l"><strong>쌀밥 (50인분)</strong></td>
+                            <td>50인분</td>
+                            <td class="ta-r"><strong>₩ 68,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="ta-l"><strong>쌀밥 (50인분)</strong></td>
+                            <td>50인분</td>
+                            <td class="ta-r"><strong>₩ 68,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="ta-l"><strong>쌀밥 (50인분)</strong></td>
+                            <td>50인분</td>
+                            <td class="ta-r"><strong>₩ 68,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="ta-l"><strong>쌀밥 (50인분)</strong></td>
+                            <td>50인분</td>
+                            <td class="ta-r"><strong>₩ 68,000</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="sum">
+                <dl>
+                    <dt>합계</dt>
+                    <dd>₩ 1,512,000</dd>
+                </dl>
+            </div>
+            <div class="btn-wrap">
+                <button class="btn sm fill-orange" onclick="popDuble(this, 'popCancle', true)">주문취소</button>
+                <!-- case1: 수령완료 -->
+                <button class="btn sm fill-blue">수령완료</button>
+                <!--// case1: 수령완료 -->
+                <!-- case2: 수령취소 -->
+                <!-- <button class="btn sm line-orange">수령취소</button> -->
+                <!--// case2: 수령취소 -->
+                <button class="btn sm fill-black">닫기</button>
+            </div>
+            <dl class="date">
+                <dt><i class="ic-date"></i>수령일시</dt>
+                <dd>12월 10일 15시 20분</dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>

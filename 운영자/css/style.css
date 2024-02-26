@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#wrapper .content {flex: 1 0; overflow: auto; height: 100vh;}
+#wrapper .content .container {padding: 2rem 3rem;}
+
+/* 로그인 */
+.login {background: #0B0C0E;position: relative; width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center;}
+.login::before {content: ""; width: 100%; height: calc(100vh - 26.6rem); position: absolute; top: 0; left: 0; background: radial-gradient(57.84% 94.83% at 50% 0%, rgba(64, 69, 74, 0.46) 0%, rgba(33, 37, 41, 0) 100%);}
+.login::after {content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 26.6rem; background: url('../img/bg_login.png') no-repeat center; background-size: auto 26.6rem; opacity: 0.8;}
+.login .inner {width: 43rem; padding-top: 4rem; position: relative; z-index: 1;}
+.login .inner .headline {width: 30rem; margin: 0 auto;}
+.login .inner .tab-wrap {margin-top: 4rem;}
+.login .inner .login-form input[type="password"] {margin-top: 1rem;}
+.login .inner .login-form .btn {margin-top: 2rem;}
