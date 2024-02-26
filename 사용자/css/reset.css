@@ -17,7 +17,7 @@ time, mark, audio, video, button, input { font-family: inherit; margin: 0; paddi
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section { display: block; }
 html {font-size: 62.5%}
-body { min-height: 100vh; scroll-behavior: smooth; text-rendering: optimizeSpeed; color: #343A40; font-size: 16px; font-family: 'Pretendard'; -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
+body { /*min-height: 100vh;*/ scroll-behavior: smooth; text-rendering: optimizeSpeed; color: #343A40; font-size: 16px; font-family: 'Pretendard'; -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,

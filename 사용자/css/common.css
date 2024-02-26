@@ -67,7 +67,7 @@
 
 .has-padding{}
 
-body {display: flex; flex-direction: column; max-height: 100vh; background-color: #F1F3F5;}
+body {display: flex; flex-direction: column; height: 100vh; background-color: #F1F3F5;}
 
 /*-------------------------------------------------------------------
     @floating
