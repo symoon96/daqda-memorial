@@ -3,7 +3,7 @@ $(document).ready(function(){
     tab();
     sideNav();
 
-    $('#wrapper .content').css('height', windowHeight)
+    $('#wrapper .content, #wrapper .nav, #wrapper .chit').css('height', windowHeight)
 })
 
 // 사이드 네비게이션
